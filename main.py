@@ -40,6 +40,8 @@ service = dict(type="service_account",
                universe_domain=os.getenv("DOMAIN"),
                )
 
+print(service)
+
 try:
     cred = credentials.Certificate(service)
     firebase_admin.initialize_app(cred)
