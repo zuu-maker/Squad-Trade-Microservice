@@ -27,6 +27,8 @@ app.add_middleware(
 # TODO please sort env
 load_dotenv()
 
+print(len(os.getenv("PRIVATE_KEY")))
+
 service = dict(type="service_account",
                project_id=os.getenv("PROJECT_ID"),
                private_key_id=os.getenv("PRIVATE_KEY_ID"),
